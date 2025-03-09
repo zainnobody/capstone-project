@@ -1,0 +1,8 @@
+.venv/
+
+# Ignore the full data directory, as it is huge.
+
+data/full-data
+
+.env
+kaggle.json
