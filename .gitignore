@@ -1,8 +1,11 @@
 .venv/
-
+.conda/
 # Ignore the full data directory, as it is huge.
 
 data/full-data
+
+data/processed-data
+
 
 .env
 kaggle.json
