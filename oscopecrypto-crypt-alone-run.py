@@ -208,7 +208,9 @@ def train_test_split_sequences(X_seq, y_seq, indices, train_ratio=0.8):
     return X_train, y_train, X_test, y_test, idx_train, idx_test
 
 def format_percent_string(p):
-    return f"{p * 100:.4f}".rstrip("0").rstrip(".").replace(".", "_")
+    formatted = f"{p * 100:05.2f}"
+    return formatted.replace(".", "_")
+
 
 def train_model(model, X_train, y_train, X_val, y_val, data_percent=0.01, epochs=20, model_name="model", asset="btc"):
     
@@ -1063,7 +1065,7 @@ def plot_loss_val_loss(logs_df, available_pcts, selected_pct='all', save_dir="lo
             plt.tight_layout()
 
             # Save figure
-            formatted_pct = format_percent_string(pct)
+            formatted_pct = format_percent_string(pct/100)
             filename = f"loss_curve_all_{crypto.lower()}_{formatted_pct}pct.png"
             save_path = os.path.join(save_dir, filename)
             plt.savefig(save_path)
