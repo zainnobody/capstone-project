@@ -1,0 +1,283 @@
+#### Experiment: Data Used: 0.100%, Epochs: 10
+**Stop Loss:** 0.300%
+
+**Duration:** 11.70 seconds
+
+##### Console Output:
+```
+Loading data for asset: eth
+Subsetting data...
+Total data values in intersection: 1394591
+Number of data points to use: 1394
+Start of subset: 2016-05-09 17:31:00+00:00
+End of subset: 2016-05-14 10:00:00+00:00
+Data subset shape: (1394, 44), (1394,)
+Normalizing features...
+Creating sequences...
+Total sequences: 1364
+Splitting data into training and testing sets...
+Train size: (1091, 30, 40), Test size: (273, 30, 40)
+Building model...
+Building RNN model with input shape: (30, 40)
+Training model...
+Epoch 1/10
+
+ 1/35 [..............................] - ETA: 17s - loss: 97.2211
+ 4/35 [==>...........................] - ETA: 0s - loss: 89.9029 
+ 7/35 [=====>........................] - ETA: 0s - loss: 81.8828
+10/35 [=======>......................] - ETA: 0s - loss: 74.8685
+13/35 [==========>...................] - ETA: 0s - loss: 68.2312
+16/35 [============>.................] - ETA: 0s - loss: 62.1638
+19/35 [===============>..............] - ETA: 0s - loss: 56.8716
+22/35 [=================>............] - ETA: 0s - loss: 52.1065
+25/35 [====================>.........] - ETA: 0s - loss: 47.8442
+28/35 [=======================>......] - ETA: 0s - loss: 44.1505
+31/35 [=========================>....] - ETA: 0s - loss: 40.7966
+34/35 [============================>.] - ETA: 0s - loss: 37.7533
+Epoch 1: val_loss improved from inf to 5.58886, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 2s 30ms/step - loss: 37.6590 - val_loss: 5.5889
+Epoch 2/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 5.8531
+ 4/35 [==>...........................] - ETA: 0s - loss: 4.7763
+ 7/35 [=====>........................] - ETA: 0s - loss: 4.1467
+10/35 [=======>......................] - ETA: 0s - loss: 3.7329
+13/35 [==========>...................] - ETA: 0s - loss: 3.4054
+16/35 [============>.................] - ETA: 0s - loss: 3.0074
+19/35 [===============>..............] - ETA: 0s - loss: 2.7523
+22/35 [=================>............] - ETA: 0s - loss: 2.5745
+25/35 [====================>.........] - ETA: 0s - loss: 2.3791
+28/35 [=======================>......] - ETA: 0s - loss: 2.2163
+31/35 [=========================>....] - ETA: 0s - loss: 2.1069
+34/35 [============================>.] - ETA: 0s - loss: 1.9881
+Epoch 2: val_loss improved from 5.58886 to 0.30609, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 26ms/step - loss: 1.9858 - val_loss: 0.3061
+Epoch 3/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.6337
+ 4/35 [==>...........................] - ETA: 0s - loss: 0.8373
+ 7/35 [=====>........................] - ETA: 0s - loss: 0.8216
+10/35 [=======>......................] - ETA: 0s - loss: 0.8540
+13/35 [==========>...................] - ETA: 0s - loss: 0.7977
+16/35 [============>.................] - ETA: 0s - loss: 0.7731
+19/35 [===============>..............] - ETA: 0s - loss: 0.8003
+22/35 [=================>............] - ETA: 0s - loss: 0.7970
+25/35 [====================>.........] - ETA: 0s - loss: 0.8023
+28/35 [=======================>......] - ETA: 0s - loss: 0.7913
+31/35 [=========================>....] - ETA: 0s - loss: 0.7730
+34/35 [============================>.] - ETA: 0s - loss: 0.7880
+Epoch 3: val_loss improved from 0.30609 to 0.12567, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.7876 - val_loss: 0.1257
+Epoch 4/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.7813
+ 4/35 [==>...........................] - ETA: 0s - loss: 0.7907
+ 7/35 [=====>........................] - ETA: 0s - loss: 0.8437
+10/35 [=======>......................] - ETA: 0s - loss: 0.8598
+13/35 [==========>...................] - ETA: 0s - loss: 0.8472
+16/35 [============>.................] - ETA: 0s - loss: 0.8158
+19/35 [===============>..............] - ETA: 0s - loss: 0.8102
+22/35 [=================>............] - ETA: 0s - loss: 0.7985
+25/35 [====================>.........] - ETA: 0s - loss: 0.7767
+28/35 [=======================>......] - ETA: 0s - loss: 0.7706
+31/35 [=========================>....] - ETA: 0s - loss: 0.7758
+34/35 [============================>.] - ETA: 0s - loss: 0.7661
+Epoch 4: val_loss did not improve from 0.12567
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.7648 - val_loss: 0.1290
+Epoch 5/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.9736
+ 4/35 [==>...........................] - ETA: 0s - loss: 0.6694
+ 7/35 [=====>........................] - ETA: 0s - loss: 0.6250
+10/35 [=======>......................] - ETA: 0s - loss: 0.6484
+13/35 [==========>...................] - ETA: 0s - loss: 0.6843
+16/35 [============>.................] - ETA: 0s - loss: 0.6777
+19/35 [===============>..............] - ETA: 0s - loss: 0.6942
+22/35 [=================>............] - ETA: 0s - loss: 0.7156
+25/35 [====================>.........] - ETA: 0s - loss: 0.7253
+28/35 [=======================>......] - ETA: 0s - loss: 0.7207
+31/35 [=========================>....] - ETA: 0s - loss: 0.7147
+34/35 [============================>.] - ETA: 0s - loss: 0.7305
+Epoch 5: val_loss improved from 0.12567 to 0.10751, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.7316 - val_loss: 0.1075
+Epoch 6/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.6534
+ 3/35 [=>............................] - ETA: 0s - loss: 0.7303
+ 6/35 [====>.........................] - ETA: 0s - loss: 0.7099
+ 9/35 [======>.......................] - ETA: 0s - loss: 0.6883
+12/35 [=========>....................] - ETA: 0s - loss: 0.7166
+15/35 [===========>..................] - ETA: 0s - loss: 0.7254
+18/35 [==============>...............] - ETA: 0s - loss: 0.7167
+21/35 [=================>............] - ETA: 0s - loss: 0.7149
+24/35 [===================>..........] - ETA: 0s - loss: 0.7109
+27/35 [======================>.......] - ETA: 0s - loss: 0.7112
+30/35 [========================>.....] - ETA: 0s - loss: 0.7011
+33/35 [===========================>..] - ETA: 0s - loss: 0.7085
+Epoch 6: val_loss improved from 0.10751 to 0.08974, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.7124 - val_loss: 0.0897
+Epoch 7/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.4450
+ 4/35 [==>...........................] - ETA: 0s - loss: 0.6170
+ 7/35 [=====>........................] - ETA: 0s - loss: 0.6297
+10/35 [=======>......................] - ETA: 0s - loss: 0.6225
+13/35 [==========>...................] - ETA: 0s - loss: 0.6233
+16/35 [============>.................] - ETA: 0s - loss: 0.6593
+19/35 [===============>..............] - ETA: 0s - loss: 0.6398
+22/35 [=================>............] - ETA: 0s - loss: 0.6532
+25/35 [====================>.........] - ETA: 0s - loss: 0.6437
+28/35 [=======================>......] - ETA: 0s - loss: 0.6441
+31/35 [=========================>....] - ETA: 0s - loss: 0.6552
+34/35 [============================>.] - ETA: 0s - loss: 0.6470
+Epoch 7: val_loss improved from 0.08974 to 0.06423, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.6458 - val_loss: 0.0642
+Epoch 8/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 1.0045
+ 4/35 [==>...........................] - ETA: 0s - loss: 0.7421
+ 7/35 [=====>........................] - ETA: 0s - loss: 0.6824
+10/35 [=======>......................] - ETA: 0s - loss: 0.6709
+13/35 [==========>...................] - ETA: 0s - loss: 0.6456
+16/35 [============>.................] - ETA: 0s - loss: 0.6438
+19/35 [===============>..............] - ETA: 0s - loss: 0.6704
+22/35 [=================>............] - ETA: 0s - loss: 0.7062
+25/35 [====================>.........] - ETA: 0s - loss: 0.6913
+28/35 [=======================>......] - ETA: 0s - loss: 0.6938
+31/35 [=========================>....] - ETA: 0s - loss: 0.6825
+34/35 [============================>.] - ETA: 0s - loss: 0.7013
+Epoch 8: val_loss improved from 0.06423 to 0.04987, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.7028 - val_loss: 0.0499
+Epoch 9/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.8111
+ 3/35 [=>............................] - ETA: 0s - loss: 0.6772
+ 6/35 [====>.........................] - ETA: 0s - loss: 0.6435
+ 9/35 [======>.......................] - ETA: 0s - loss: 0.6608
+12/35 [=========>....................] - ETA: 0s - loss: 0.6857
+15/35 [===========>..................] - ETA: 0s - loss: 0.7089
+18/35 [==============>...............] - ETA: 0s - loss: 0.7005
+21/35 [=================>............] - ETA: 0s - loss: 0.6810
+24/35 [===================>..........] - ETA: 0s - loss: 0.6667
+27/35 [======================>.......] - ETA: 0s - loss: 0.6710
+30/35 [========================>.....] - ETA: 0s - loss: 0.6719
+33/35 [===========================>..] - ETA: 0s - loss: 0.6754
+Epoch 9: val_loss improved from 0.04987 to 0.04517, saving model to models\rnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.6720 - val_loss: 0.0452
+Epoch 10/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 1.0709
+ 4/35 [==>...........................] - ETA: 0s - loss: 0.8496
+ 7/35 [=====>........................] - ETA: 0s - loss: 0.6687
+10/35 [=======>......................] - ETA: 0s - loss: 0.6461
+13/35 [==========>...................] - ETA: 0s - loss: 0.6410
+16/35 [============>.................] - ETA: 0s - loss: 0.6297
+19/35 [===============>..............] - ETA: 0s - loss: 0.6341
+22/35 [=================>............] - ETA: 0s - loss: 0.6417
+25/35 [====================>.........] - ETA: 0s - loss: 0.6644
+28/35 [=======================>......] - ETA: 0s - loss: 0.6880
+30/35 [========================>.....] - ETA: 0s - loss: 0.6796
+33/35 [===========================>..] - ETA: 0s - loss: 0.6752
+Epoch 10: val_loss did not improve from 0.04517
+
+35/35 [==============================] - 1s 26ms/step - loss: 0.6752 - val_loss: 0.0464
+Plotting training loss...
+Loss curve saved to: plots\loss_curve_rnn_eth_0_1pct.png
+Generating predictions on test set...
+
+1/9 [==>...........................] - ETA: 0s
+9/9 [==============================] - 0s 5ms/step
+Predictions shape: (273, 1)
+Plotting predictions and saving comparison CSV...
+Prediction plot saved to: plots\prediction_plot_rnn_eth_0_1pct.png
+Comparison CSV saved to: model-result-data\rnn_eth_0_1pct_comparison.csv
+Printing evaluation metrics...
+0.1% | acc 0.0441  prec 0.0294  rec 0.3750  f1 0.0545  mse 0.0464  rmse 0.2155  mae 0.1728
+Saving model and scaler...
+Model saved to: models\rnn_eth_model_0_1pct.h5
+Scaler saved to: models\rnn_eth_scaler_0_1pct.pkl
+Training and prediction complete.
+Signal distribution:
+Signal
+-1    191
+ 1     82
+Name: count, dtype: int64
+Setting up Backtest object...
+Running backtest engine...
+Found 82 +1 signals and 191 -1 signals in the data.
+Start                                     0.0
+End                                     272.0
+Duration                                272.0
+Exposure Time [%]                    67.76557
+Equity Final [$]                     113863.9
+Equity Peak [$]                     121078.59
+Return [%]                            13.8639
+Buy & Hold Return [%]                 -8.0689
+Return (Ann.) [%]                         0.0
+Volatility (Ann.) [%]                     NaN
+Sharpe Ratio                              NaN
+Sortino Ratio                             NaN
+Calmar Ratio                              0.0
+Alpha [%]                            16.21273
+Beta                                   0.2911
+Max. Drawdown [%]                    -6.32965
+Avg. Drawdown [%]                    -3.12487
+Max. Drawdown Duration                   88.0
+Avg. Drawdown Duration               42.33333
+# Trades                                 14.0
+Win Rate [%]                             50.0
+Best Trade [%]                        5.57692
+Worst Trade [%]                       -2.7619
+Avg. Trade [%]                        0.90327
+Max. Trade Duration                      43.0
+Avg. Trade Duration                  12.85714
+Profit Factor                          2.4109
+Expectancy [%]                        0.94056
+SQN                                    1.1621
+Kelly Criterion                       0.19204
+_strategy                 MLStrategy(stop_...
+_equity_curve                    Equity  D...
+_trades                        Size  Entry...
+dtype: object
+
+Trade Details:
+Number of trades:       14
+Number of closed trades:14
+Number of open trades:  0
+Saving backtest plot to HTML...
+Backtest stats saved to: results\rnn_eth_0_1pct_0_3stloss\backtest_stats.csv
+Full pipeline complete.
+
+```
+##### Training Loss Plot:
+![Training Loss Plot](../../plots/loss_curve_rnn_eth_0_1pct.png)
+
+##### Prediction Plot:
+![Prediction Plot](../../plots/prediction_plot_rnn_eth_0_1pct.png)
+
+##### Metrics CSV:
+[View CSV](../../model-result-data/eth_rnn_0_1pct_metrics.csv)
+
+##### Backtest Interactive Chart:
+<iframe src="../../results/rnn_eth_0_1pct_0_3stloss/backtest_plot.html" width="100%" height="600px" frameborder="0"></iframe>
+If the iframe does not display, please [click here to view the HTML](../../results/rnn_eth_0_1pct_0_3stloss/backtest_plot.html).
+
+##### Backtest Stats:
+[View CSV](../../results/rnn_eth_0_1pct_0_3stloss/backtest_stats.csv)
+
+##### Saved Model and Scaler:
+- **Model:** [View Model](../../models/rnn_eth_model_0_1pct.h5)
+- **Scaler:** [View Scaler](../../models/rnn_eth_scaler_0_1pct.pkl)
+
+
+---
+

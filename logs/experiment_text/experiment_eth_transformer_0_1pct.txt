@@ -1,0 +1,187 @@
+#### Experiment: Data Used: 0.100%, Epochs: 10
+**Stop Loss:** 0.300%
+
+**Duration:** 4.06 seconds
+
+##### Console Output:
+```
+Loading data for asset: eth
+Subsetting data...
+Total data values in intersection: 1394591
+Number of data points to use: 1394
+Start of subset: 2016-05-09 17:31:00+00:00
+End of subset: 2016-05-14 10:00:00+00:00
+Data subset shape: (1394, 44), (1394,)
+Normalizing features...
+Creating sequences...
+Total sequences: 1364
+Splitting data into training and testing sets...
+Train size: (1091, 30, 40), Test size: (273, 30, 40)
+Building model...
+Building Transformer model with input shape: (30, 40)
+Training model...
+Epoch 1/10
+
+ 1/35 [..............................] - ETA: 18s - loss: 111.3019
+10/35 [=======>......................] - ETA: 0s - loss: 87.9303  
+19/35 [===============>..............] - ETA: 0s - loss: 71.6217
+28/35 [=======================>......] - ETA: 0s - loss: 59.3442
+Epoch 1: val_loss improved from inf to 12.37485, saving model to models\transformer_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 12ms/step - loss: 52.3539 - val_loss: 12.3748
+Epoch 2/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 13.6765
+10/35 [=======>......................] - ETA: 0s - loss: 8.9963 
+19/35 [===============>..............] - ETA: 0s - loss: 6.0012
+28/35 [=======================>......] - ETA: 0s - loss: 4.1830
+Epoch 2: val_loss improved from 12.37485 to 1.30820, saving model to models\transformer_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 9ms/step - loss: 3.5017 - val_loss: 1.3082
+Epoch 3/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.4426
+10/35 [=======>......................] - ETA: 0s - loss: 0.4028
+19/35 [===============>..............] - ETA: 0s - loss: 0.3274
+28/35 [=======================>......] - ETA: 0s - loss: 0.2937
+Epoch 3: val_loss improved from 1.30820 to 0.39437, saving model to models\transformer_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 9ms/step - loss: 0.2772 - val_loss: 0.3944
+Epoch 4/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.1332
+10/35 [=======>......................] - ETA: 0s - loss: 0.1845
+18/35 [==============>...............] - ETA: 0s - loss: 0.2088
+26/35 [=====================>........] - ETA: 0s - loss: 0.1955
+35/35 [==============================] - ETA: 0s - loss: 0.1913
+Epoch 4: val_loss did not improve from 0.39437
+
+35/35 [==============================] - 0s 8ms/step - loss: 0.1913 - val_loss: 0.5517
+Epoch 5/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.2098
+10/35 [=======>......................] - ETA: 0s - loss: 0.1698
+19/35 [===============>..............] - ETA: 0s - loss: 0.1698
+28/35 [=======================>......] - ETA: 0s - loss: 0.1678
+Epoch 5: val_loss did not improve from 0.39437
+
+35/35 [==============================] - 0s 8ms/step - loss: 0.1671 - val_loss: 0.6970
+Epoch 6/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.1891
+10/35 [=======>......................] - ETA: 0s - loss: 0.1542
+19/35 [===============>..............] - ETA: 0s - loss: 0.1629
+28/35 [=======================>......] - ETA: 0s - loss: 0.1560
+Epoch 6: val_loss did not improve from 0.39437
+
+35/35 [==============================] - 0s 7ms/step - loss: 0.1498 - val_loss: 0.7293
+Epoch 7/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.1080
+ 9/35 [======>.......................] - ETA: 0s - loss: 0.1385
+18/35 [==============>...............] - ETA: 0s - loss: 0.1405
+27/35 [======================>.......] - ETA: 0s - loss: 0.1433
+Epoch 7: val_loss did not improve from 0.39437
+
+35/35 [==============================] - 0s 8ms/step - loss: 0.1370 - val_loss: 0.8892
+Epoch 8/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.1269
+10/35 [=======>......................] - ETA: 0s - loss: 0.1412
+19/35 [===============>..............] - ETA: 0s - loss: 0.1237
+28/35 [=======================>......] - ETA: 0s - loss: 0.1339
+Epoch 8: val_loss did not improve from 0.39437
+Restoring model weights from the end of the best epoch: 3.
+
+35/35 [==============================] - 0s 9ms/step - loss: 0.1325 - val_loss: 0.9930
+Epoch 8: early stopping
+Plotting training loss...
+Loss curve saved to: plots\loss_curve_transformer_eth_0_1pct.png
+Generating predictions on test set...
+
+1/9 [==>...........................] - ETA: 0s
+9/9 [==============================] - 0s 2ms/step
+Predictions shape: (273, 1)
+Plotting predictions and saving comparison CSV...
+Prediction plot saved to: plots\prediction_plot_transformer_eth_0_1pct.png
+Comparison CSV saved to: model-result-data\transformer_eth_0_1pct_comparison.csv
+Printing evaluation metrics...
+0.1% | acc 0.0404  prec 0.0257  rec 0.3155  f1 0.0475  mse 0.3944  rmse 0.6280  mae 0.5695
+Saving model and scaler...
+Model saved to: models\transformer_eth_model_0_1pct.h5
+Scaler saved to: models\transformer_eth_scaler_0_1pct.pkl
+Training and prediction complete.
+Signal distribution:
+Signal
+1    273
+Name: count, dtype: int64
+Setting up Backtest object...
+Running backtest engine...
+Found 273 +1 signals and 0 -1 signals in the data.
+Start                                     0.0
+End                                     272.0
+Duration                                272.0
+Exposure Time [%]                    89.37729
+Equity Final [$]                  95993.17186
+Equity Peak [$]                  103944.61186
+Return [%]                           -4.00683
+Buy & Hold Return [%]                 -8.0689
+Return (Ann.) [%]                         0.0
+Volatility (Ann.) [%]                     NaN
+Sharpe Ratio                              NaN
+Sortino Ratio                             NaN
+Calmar Ratio                              0.0
+Alpha [%]                             3.26645
+Beta                                   0.9014
+Max. Drawdown [%]                    -8.01396
+Avg. Drawdown [%]                    -5.07303
+Max. Drawdown Duration                   76.0
+Avg. Drawdown Duration                   57.5
+# Trades                                  4.0
+Win Rate [%]                              0.0
+Best Trade [%]                           -0.3
+Worst Trade [%]                       -2.7619
+Avg. Trade [%]                       -1.11496
+Max. Trade Duration                     182.0
+Avg. Trade Duration                      60.0
+Profit Factor                             0.0
+Expectancy [%]                       -1.10982
+SQN                                  -1.90101
+Kelly Criterion                           NaN
+_strategy                 MLStrategy(stop_...
+_equity_curve                        Equit...
+_trades                      Size  EntryBa...
+dtype: object
+
+Trade Details:
+Number of trades:       4
+Number of closed trades:4
+Number of open trades:  0
+Saving backtest plot to HTML...
+Backtest stats saved to: results\transformer_eth_0_1pct_0_3stloss\backtest_stats.csv
+Full pipeline complete.
+
+```
+##### Training Loss Plot:
+![Training Loss Plot](../../plots/loss_curve_transformer_eth_0_1pct.png)
+
+##### Prediction Plot:
+![Prediction Plot](../../plots/prediction_plot_transformer_eth_0_1pct.png)
+
+##### Metrics CSV:
+[View CSV](../../model-result-data/eth_transformer_0_1pct_metrics.csv)
+
+##### Backtest Interactive Chart:
+<iframe src="../../results/transformer_eth_0_1pct_0_3stloss/backtest_plot.html" width="100%" height="600px" frameborder="0"></iframe>
+If the iframe does not display, please [click here to view the HTML](../../results/transformer_eth_0_1pct_0_3stloss/backtest_plot.html).
+
+##### Backtest Stats:
+[View CSV](../../results/transformer_eth_0_1pct_0_3stloss/backtest_stats.csv)
+
+##### Saved Model and Scaler:
+- **Model:** [View Model](../../models/transformer_eth_model_0_1pct.h5)
+- **Scaler:** [View Scaler](../../models/transformer_eth_scaler_0_1pct.pkl)
+
+
+---
+

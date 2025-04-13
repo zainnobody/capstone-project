@@ -1,0 +1,189 @@
+#### Experiment: Data Used: 0.100%, Epochs: 10
+**Stop Loss:** 0.300%
+
+**Duration:** 3.12 seconds
+
+##### Console Output:
+```
+Loading data for asset: eth
+Subsetting data...
+Total data values in intersection: 1394591
+Number of data points to use: 1394
+Start of subset: 2016-05-09 17:31:00+00:00
+End of subset: 2016-05-14 10:00:00+00:00
+Data subset shape: (1394, 44), (1394,)
+Normalizing features...
+Creating sequences...
+Total sequences: 1364
+Splitting data into training and testing sets...
+Train size: (1091, 30, 40), Test size: (273, 30, 40)
+Building model...
+Training model...
+Epoch 1/10
+
+ 1/35 [..............................] - ETA: 9s - loss: 103.0547
+17/35 [=============>................] - ETA: 0s - loss: 45.0483 
+35/35 [==============================] - ETA: 0s - loss: 24.9224
+Epoch 1: val_loss improved from inf to 0.73259, saving model to models\cnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 1s 8ms/step - loss: 24.9224 - val_loss: 0.7326
+Epoch 2/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.9080
+17/35 [=============>................] - ETA: 0s - loss: 1.2145
+34/35 [============================>.] - ETA: 0s - loss: 0.8562
+Epoch 2: val_loss improved from 0.73259 to 0.27724, saving model to models\cnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.8545 - val_loss: 0.2772
+Epoch 3/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.4355
+18/35 [==============>...............] - ETA: 0s - loss: 0.4367
+Epoch 3: val_loss improved from 0.27724 to 0.12991, saving model to models\cnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.4210 - val_loss: 0.1299
+Epoch 4/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.6041
+18/35 [==============>...............] - ETA: 0s - loss: 0.4162
+35/35 [==============================] - ETA: 0s - loss: 0.3995
+Epoch 4: val_loss improved from 0.12991 to 0.10802, saving model to models\cnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.3995 - val_loss: 0.1080
+Epoch 5/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.4547
+17/35 [=============>................] - ETA: 0s - loss: 0.3634
+34/35 [============================>.] - ETA: 0s - loss: 0.3572
+Epoch 5: val_loss did not improve from 0.10802
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.3572 - val_loss: 0.1571
+Epoch 6/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.3673
+18/35 [==============>...............] - ETA: 0s - loss: 0.3475
+Epoch 6: val_loss improved from 0.10802 to 0.07520, saving model to models\cnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.3412 - val_loss: 0.0752
+Epoch 7/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.3871
+18/35 [==============>...............] - ETA: 0s - loss: 0.3301
+35/35 [==============================] - ETA: 0s - loss: 0.3249
+Epoch 7: val_loss did not improve from 0.07520
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.3249 - val_loss: 0.0805
+Epoch 8/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.3336
+18/35 [==============>...............] - ETA: 0s - loss: 0.2965
+35/35 [==============================] - ETA: 0s - loss: 0.3030
+Epoch 8: val_loss improved from 0.07520 to 0.07132, saving model to models\cnn_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.3030 - val_loss: 0.0713
+Epoch 9/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.3856
+17/35 [=============>................] - ETA: 0s - loss: 0.3130
+33/35 [===========================>..] - ETA: 0s - loss: 0.3085
+Epoch 9: val_loss did not improve from 0.07132
+
+35/35 [==============================] - 0s 5ms/step - loss: 0.3097 - val_loss: 0.1373
+Epoch 10/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.3107
+21/35 [=================>............] - ETA: 0s - loss: 0.2784
+Epoch 10: val_loss did not improve from 0.07132
+
+35/35 [==============================] - 0s 4ms/step - loss: 0.2738 - val_loss: 0.1433
+Plotting training loss...
+Loss curve saved to: plots\loss_curve_cnn_eth_0_1pct.png
+Generating predictions on test set...
+
+1/9 [==>...........................] - ETA: 0s
+9/9 [==============================] - 0s 1ms/step
+Predictions shape: (273, 1)
+Plotting predictions and saving comparison CSV...
+Prediction plot saved to: plots\prediction_plot_cnn_eth_0_1pct.png
+Comparison CSV saved to: model-result-data\cnn_eth_0_1pct_comparison.csv
+Printing evaluation metrics...
+0.1% | acc 0.0331  prec 0.0225  rec 0.3214  f1 0.0419  mse 0.1433  rmse 0.3786  mae 0.3189
+Saving model and scaler...
+Model saved to: models\cnn_eth_model_0_1pct.h5
+Scaler saved to: models\cnn_eth_scaler_0_1pct.pkl
+Training and prediction complete.
+Signal distribution:
+Signal
+ 1    218
+-1     55
+Name: count, dtype: int64
+Setting up Backtest object...
+Running backtest engine...
+Found 218 +1 signals and 55 -1 signals in the data.
+Start                                     0.0
+End                                     272.0
+Duration                                272.0
+Exposure Time [%]                    84.98168
+Equity Final [$]                  111796.3251
+Equity Peak [$]                   115765.3251
+Return [%]                           11.79633
+Buy & Hold Return [%]                 -8.0689
+Return (Ann.) [%]                         0.0
+Volatility (Ann.) [%]                     NaN
+Sharpe Ratio                              NaN
+Sortino Ratio                             NaN
+Calmar Ratio                              0.0
+Alpha [%]                            15.49147
+Beta                                  0.45795
+Max. Drawdown [%]                    -3.80943
+Avg. Drawdown [%]                    -2.49044
+Max. Drawdown Duration                   76.0
+Avg. Drawdown Duration                   48.0
+# Trades                                 17.0
+Win Rate [%]                         29.41176
+Best Trade [%]                        7.34574
+Worst Trade [%]                       -2.7619
+Avg. Trade [%]                        0.63472
+Max. Trade Duration                      40.0
+Avg. Trade Duration                  13.11765
+Profit Factor                         2.17731
+Expectancy [%]                         0.6693
+SQN                                    0.9828
+Kelly Criterion                       0.10784
+_strategy                 MLStrategy(stop_...
+_equity_curve                       Equity...
+_trades                        Size  Entry...
+dtype: object
+
+Trade Details:
+Number of trades:       17
+Number of closed trades:17
+Number of open trades:  0
+Saving backtest plot to HTML...
+Backtest stats saved to: results\cnn_eth_0_1pct_0_3stloss\backtest_stats.csv
+Full pipeline complete.
+
+```
+##### Training Loss Plot:
+![Training Loss Plot](../../plots/loss_curve_cnn_eth_0_1pct.png)
+
+##### Prediction Plot:
+![Prediction Plot](../../plots/prediction_plot_cnn_eth_0_1pct.png)
+
+##### Metrics CSV:
+[View CSV](../../model-result-data/eth_cnn_0_1pct_metrics.csv)
+
+##### Backtest Interactive Chart:
+<iframe src="../../results/cnn_eth_0_1pct_0_3stloss/backtest_plot.html" width="100%" height="600px" frameborder="0"></iframe>
+If the iframe does not display, please [click here to view the HTML](../../results/cnn_eth_0_1pct_0_3stloss/backtest_plot.html).
+
+##### Backtest Stats:
+[View CSV](../../results/cnn_eth_0_1pct_0_3stloss/backtest_stats.csv)
+
+##### Saved Model and Scaler:
+- **Model:** [View Model](../../models/cnn_eth_model_0_1pct.h5)
+- **Scaler:** [View Scaler](../../models/cnn_eth_scaler_0_1pct.pkl)
+
+
+---
+

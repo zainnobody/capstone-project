@@ -1,0 +1,51 @@
+,0
+Start,0.0
+End,272.0
+Duration,272.0
+Exposure Time [%],89.37728937728939
+Equity Final [$],95993.17186
+Equity Peak [$],103944.61185999999
+Return [%],-4.006828139999998
+Buy & Hold Return [%],-8.068902991840424
+Return (Ann.) [%],0.0
+Volatility (Ann.) [%],
+Sharpe Ratio,
+Sortino Ratio,
+Calmar Ratio,0.0
+Alpha [%],3.2664452997308437
+Beta,0.9013955734857448
+Max. Drawdown [%],-8.013960368835226
+Avg. Drawdown [%],-5.073027918102444
+Max. Drawdown Duration,76.0
+Avg. Drawdown Duration,57.5
+# Trades,4.0
+Win Rate [%],0.0
+Best Trade [%],-0.30000000000000027
+Worst Trade [%],-2.7619047619047543
+Avg. Trade [%],-1.1149590245307373
+Max. Trade Duration,182.0
+Avg. Trade Duration,60.0
+Profit Factor,0.0
+Expectancy [%],-1.1098199710834393
+SQN,-1.9010140340508128
+Kelly Criterion,
+_strategy,MLStrategy(stop_loss_pct=0.003)
+_equity_curve,"           Equity  DrawdownPct  DrawdownDuration
+0    100000.00000     0.000000               NaN
+1    100000.00000     0.000000               NaN
+2    100000.00000     0.000000               NaN
+3    100000.00000     0.000000               NaN
+4    100000.00000     0.000000               NaN
+..            ...          ...               ...
+268   95993.17186     0.076497               NaN
+269   95993.17186     0.076497               NaN
+270   95993.17186     0.076497               NaN
+271   95993.17186     0.076497               NaN
+272   95993.17186     0.076497              76.0
+
+[273 rows x 3 columns]"
+_trades,"   Size  EntryBar  ExitBar  EntryPrice  ExitPrice    SL    TP         PnL  ReturnPct  EntryTime  ExitTime  Duration   Tag
+0  9066         2       42       11.03   10.99691  None  None  -299.99394  -0.003000          2        42        40  None
+1  9146        43       48       10.90   10.86730  None  None  -299.07420  -0.003000         43        48         5  None
+2  9466        49       62       10.50   10.21000  None  None -2745.14000  -0.027619         49        62        13  None
+3  9466        63      245       10.21   10.10000  None  None -1041.26000  -0.010774         63       245       182  None"

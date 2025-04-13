@@ -208,9 +208,7 @@ def train_test_split_sequences(X_seq, y_seq, indices, train_ratio=0.8):
     return X_train, y_train, X_test, y_test, idx_train, idx_test
 
 def format_percent_string(p):
-    formatted = f"{p * 100:05.2f}"
-    return formatted.replace(".", "_")
-
+    return f"{p * 100:.4f}".rstrip("0").rstrip(".").replace(".", "_")
 
 def train_model(model, X_train, y_train, X_val, y_val, data_percent=0.01, epochs=20, model_name="model", asset="btc"):
     

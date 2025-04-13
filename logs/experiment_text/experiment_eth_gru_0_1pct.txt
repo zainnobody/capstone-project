@@ -1,0 +1,216 @@
+#### Experiment: Data Used: 0.100%, Epochs: 10
+**Stop Loss:** 0.300%
+
+**Duration:** 6.58 seconds
+
+##### Console Output:
+```
+Loading data for asset: eth
+Subsetting data...
+Total data values in intersection: 1394591
+Number of data points to use: 1394
+Start of subset: 2016-05-09 17:31:00+00:00
+End of subset: 2016-05-14 10:00:00+00:00
+Data subset shape: (1394, 44), (1394,)
+Normalizing features...
+Creating sequences...
+Total sequences: 1364
+Splitting data into training and testing sets...
+Train size: (1091, 30, 40), Test size: (273, 30, 40)
+Building model...
+Training model...
+Epoch 1/10
+
+ 1/35 [..............................] - ETA: 45s - loss: 102.0678
+ 8/35 [=====>........................] - ETA: 0s - loss: 89.0179  
+15/35 [===========>..................] - ETA: 0s - loss: 76.3619
+22/35 [=================>............] - ETA: 0s - loss: 64.1205
+29/35 [=======================>......] - ETA: 0s - loss: 52.3909
+Epoch 1: val_loss improved from inf to 2.43414, saving model to models\gru_eth_model_0_1pct.h5
+
+35/35 [==============================] - 2s 18ms/step - loss: 45.2963 - val_loss: 2.4341
+Epoch 2/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 2.9840
+ 7/35 [=====>........................] - ETA: 0s - loss: 1.8774
+14/35 [===========>..................] - ETA: 0s - loss: 1.3056
+20/35 [================>.............] - ETA: 0s - loss: 1.1208
+25/35 [====================>.........] - ETA: 0s - loss: 1.0623
+32/35 [==========================>...] - ETA: 0s - loss: 1.0248
+Epoch 2: val_loss improved from 2.43414 to 0.09445, saving model to models\gru_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 11ms/step - loss: 1.0289 - val_loss: 0.0944
+Epoch 3/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.7909
+ 8/35 [=====>........................] - ETA: 0s - loss: 0.7728
+15/35 [===========>..................] - ETA: 0s - loss: 0.7242
+22/35 [=================>............] - ETA: 0s - loss: 0.7023
+29/35 [=======================>......] - ETA: 0s - loss: 0.6959
+Epoch 3: val_loss did not improve from 0.09445
+
+35/35 [==============================] - 0s 10ms/step - loss: 0.7099 - val_loss: 0.2132
+Epoch 4/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.3850
+ 8/35 [=====>........................] - ETA: 0s - loss: 0.5190
+15/35 [===========>..................] - ETA: 0s - loss: 0.6281
+22/35 [=================>............] - ETA: 0s - loss: 0.6338
+30/35 [========================>.....] - ETA: 0s - loss: 0.6360
+Epoch 4: val_loss did not improve from 0.09445
+
+35/35 [==============================] - 0s 10ms/step - loss: 0.6174 - val_loss: 0.1780
+Epoch 5/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 1.0994
+ 8/35 [=====>........................] - ETA: 0s - loss: 0.6400
+15/35 [===========>..................] - ETA: 0s - loss: 0.6049
+22/35 [=================>............] - ETA: 0s - loss: 0.5903
+29/35 [=======================>......] - ETA: 0s - loss: 0.5915
+Epoch 5: val_loss did not improve from 0.09445
+
+35/35 [==============================] - 0s 10ms/step - loss: 0.5987 - val_loss: 0.1449
+Epoch 6/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.7550
+ 8/35 [=====>........................] - ETA: 0s - loss: 0.6439
+15/35 [===========>..................] - ETA: 0s - loss: 0.6172
+22/35 [=================>............] - ETA: 0s - loss: 0.6044
+29/35 [=======================>......] - ETA: 0s - loss: 0.6282
+Epoch 6: val_loss did not improve from 0.09445
+
+35/35 [==============================] - 0s 10ms/step - loss: 0.6281 - val_loss: 0.0987
+Epoch 7/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.8691
+ 8/35 [=====>........................] - ETA: 0s - loss: 0.6478
+15/35 [===========>..................] - ETA: 0s - loss: 0.6284
+22/35 [=================>............] - ETA: 0s - loss: 0.6438
+29/35 [=======================>......] - ETA: 0s - loss: 0.6264
+Epoch 7: val_loss improved from 0.09445 to 0.06423, saving model to models\gru_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 10ms/step - loss: 0.6243 - val_loss: 0.0642
+Epoch 8/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.6125
+ 8/35 [=====>........................] - ETA: 0s - loss: 0.6467
+15/35 [===========>..................] - ETA: 0s - loss: 0.5933
+21/35 [=================>............] - ETA: 0s - loss: 0.5790
+26/35 [=====================>........] - ETA: 0s - loss: 0.5947
+33/35 [===========================>..] - ETA: 0s - loss: 0.5818
+Epoch 8: val_loss improved from 0.06423 to 0.04523, saving model to models\gru_eth_model_0_1pct.h5
+
+35/35 [==============================] - 0s 11ms/step - loss: 0.5901 - val_loss: 0.0452
+Epoch 9/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.5609
+ 7/35 [=====>........................] - ETA: 0s - loss: 0.5530
+14/35 [===========>..................] - ETA: 0s - loss: 0.5653
+21/35 [=================>............] - ETA: 0s - loss: 0.5799
+28/35 [=======================>......] - ETA: 0s - loss: 0.5553
+35/35 [==============================] - ETA: 0s - loss: 0.5590
+Epoch 9: val_loss did not improve from 0.04523
+
+35/35 [==============================] - 0s 10ms/step - loss: 0.5590 - val_loss: 0.0696
+Epoch 10/10
+
+ 1/35 [..............................] - ETA: 0s - loss: 0.7834
+ 8/35 [=====>........................] - ETA: 0s - loss: 0.5965
+14/35 [===========>..................] - ETA: 0s - loss: 0.5548
+21/35 [=================>............] - ETA: 0s - loss: 0.5613
+28/35 [=======================>......] - ETA: 0s - loss: 0.5624
+35/35 [==============================] - ETA: 0s - loss: 0.5722
+Epoch 10: val_loss did not improve from 0.04523
+
+35/35 [==============================] - 0s 10ms/step - loss: 0.5722 - val_loss: 0.0658
+Plotting training loss...
+Loss curve saved to: plots\loss_curve_gru_eth_0_1pct.png
+Generating predictions on test set...
+
+1/9 [==>...........................] - ETA: 1s
+9/9 [==============================] - 0s 3ms/step
+Predictions shape: (273, 1)
+Plotting predictions and saving comparison CSV...
+Prediction plot saved to: plots\prediction_plot_gru_eth_0_1pct.png
+Comparison CSV saved to: model-result-data\gru_eth_0_1pct_comparison.csv
+Printing evaluation metrics...
+0.1% | acc 0.0478  prec 0.0276  rec 0.3452  f1 0.0510  mse 0.0658  rmse 0.2566  mae 0.2057
+Saving model and scaler...
+Model saved to: models\gru_eth_model_0_1pct.h5
+Scaler saved to: models\gru_eth_scaler_0_1pct.pkl
+Training and prediction complete.
+Signal distribution:
+Signal
+-1    238
+ 1     35
+Name: count, dtype: int64
+Setting up Backtest object...
+Running backtest engine...
+Found 35 +1 signals and 238 -1 signals in the data.
+Start                                     0.0
+End                                     272.0
+Duration                                272.0
+Exposure Time [%]                    36.63004
+Equity Final [$]                     93158.31
+Equity Peak [$]                      100000.0
+Return [%]                           -6.84169
+Buy & Hold Return [%]                 -8.0689
+Return (Ann.) [%]                         0.0
+Volatility (Ann.) [%]                     NaN
+Sharpe Ratio                              NaN
+Sortino Ratio                             NaN
+Calmar Ratio                              0.0
+Alpha [%]                            -6.88722
+Beta                                 -0.00564
+Max. Drawdown [%]                    -7.20917
+Avg. Drawdown [%]                    -7.20917
+Max. Drawdown Duration                  211.0
+Avg. Drawdown Duration                  211.0
+# Trades                                  9.0
+Win Rate [%]                         33.33333
+Best Trade [%]                        2.74241
+Worst Trade [%]                      -4.48046
+Avg. Trade [%]                        -0.7844
+Max. Trade Duration                      21.0
+Avg. Trade Duration                  10.55556
+Profit Factor                         0.31954
+Expectancy [%]                       -0.76516
+SQN                                  -1.11553
+Kelly Criterion                      -1.26138
+_strategy                 MLStrategy(stop_...
+_equity_curve                     Equity  ...
+_trades                      Size  EntryBa...
+dtype: object
+
+Trade Details:
+Number of trades:       9
+Number of closed trades:9
+Number of open trades:  0
+Saving backtest plot to HTML...
+Backtest stats saved to: results\gru_eth_0_1pct_0_3stloss\backtest_stats.csv
+Full pipeline complete.
+
+```
+##### Training Loss Plot:
+![Training Loss Plot](../../plots/loss_curve_gru_eth_0_1pct.png)
+
+##### Prediction Plot:
+![Prediction Plot](../../plots/prediction_plot_gru_eth_0_1pct.png)
+
+##### Metrics CSV:
+[View CSV](../../model-result-data/eth_gru_0_1pct_metrics.csv)
+
+##### Backtest Interactive Chart:
+<iframe src="../../results/gru_eth_0_1pct_0_3stloss/backtest_plot.html" width="100%" height="600px" frameborder="0"></iframe>
+If the iframe does not display, please [click here to view the HTML](../../results/gru_eth_0_1pct_0_3stloss/backtest_plot.html).
+
+##### Backtest Stats:
+[View CSV](../../results/gru_eth_0_1pct_0_3stloss/backtest_stats.csv)
+
+##### Saved Model and Scaler:
+- **Model:** [View Model](../../models/gru_eth_model_0_1pct.h5)
+- **Scaler:** [View Scaler](../../models/gru_eth_scaler_0_1pct.pkl)
+
+
+---
+

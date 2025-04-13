@@ -1,0 +1,59 @@
+,0
+Start,0.0
+End,12560.0
+Duration,12560.0
+Exposure Time [%],24.79898097285248
+Equity Final [$],105478.97592999996
+Equity Peak [$],113261.99592999998
+Return [%],5.478975929999956
+Buy & Hold Return [%],9.369202226345081
+Return (Ann.) [%],0.0
+Volatility (Ann.) [%],
+Sharpe Ratio,
+Sortino Ratio,
+Calmar Ratio,0.0
+Alpha [%],-3.651718305679241
+Beta,0.9745434045606116
+Max. Drawdown [%],-14.319700013244063
+Avg. Drawdown [%],-1.824835345011169
+Max. Drawdown Duration,8815.0
+Avg. Drawdown Duration,378.15625
+# Trades,12.0
+Win Rate [%],0.0
+Best Trade [%],-0.20495710200190143
+Worst Trade [%],-2.4390243902439046
+Avg. Trade [%],-0.9316424644327026
+Max. Trade Duration,1042.0
+Avg. Trade Duration,258.5833333333333
+Profit Factor,0.0
+Expectancy [%],-0.9283706783419804
+SQN,-3.795222759294365
+Kelly Criterion,
+_strategy,MLStrategy(stop_loss_pct=0.003)
+_equity_curve,"             Equity  DrawdownPct  DrawdownDuration
+0      100000.00000     0.000000               NaN
+1      100000.00000     0.000000               NaN
+2      100000.00000     0.000000               NaN
+3      100000.00000     0.000000               NaN
+4      101113.12000     0.000000               NaN
+...             ...          ...               ...
+12556  105478.97593     0.068717               NaN
+12557  105478.97593     0.068717               NaN
+12558  105478.97593     0.068717               NaN
+12559  105478.97593     0.068717               NaN
+12560  105478.97593     0.068717            1363.0
+
+[12561 rows x 3 columns]"
+_trades,"    Size  EntryBar  ExitBar  EntryPrice  ExitPrice    SL    TP         PnL  ReturnPct  EntryTime  ExitTime  Duration   Tag
+0   9276         2      400       10.78   10.72000  None  None  -556.56000  -0.005566          2       400       398  None
+1   9207       401      973       10.80   10.54000  None  None -2393.82000  -0.024074        401       973       572  None
+2   9216       974      977       10.53   10.50000  None  None  -276.48000  -0.002849        974       977         3  None
+3   9225       978     2020       10.49   10.46850  None  None  -198.33750  -0.002050        978      2020      1042  None
+4   9286      2021     2275       10.40   10.31000  None  None  -835.74000  -0.008654       2021      2275       254  None
+5   9295      2276     2284       10.30   10.20000  None  None  -929.50000  -0.009709       2276      2284         8  None
+6   9295      2285     2288       10.20   10.16000  None  None  -371.80000  -0.003922       2285      2288         3  None
+7   9213      2289     2504       10.25   10.00000  None  None -2303.25000  -0.024390       2289      2504       215  None
+8   9213      2505     2534       10.00    9.81000  None  None -1750.47000  -0.019000       2505      2534        29  None
+9   9213      2535     2546        9.81    9.78000  None  None  -276.39000  -0.003058       2535      2546        11  None
+10  9251      2547     2602        9.74    9.69000  None  None  -462.55000  -0.005133       2547      2602        55  None
+11  9251      2603     3116        9.69    9.66093  None  None  -268.92657  -0.003000       2603      3116       513  None"

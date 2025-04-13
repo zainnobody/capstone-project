@@ -1,0 +1,73 @@
+,0
+Start,0.0
+End,27885.0
+Duration,27885.0
+Exposure Time [%],8.99376030983289
+Equity Final [$],226204.2601199999
+Equity Peak [$],227924.70611999984
+Return [%],126.2042601199999
+Buy & Hold Return [%],171.50595882990248
+Return (Ann.) [%],0.0
+Volatility (Ann.) [%],
+Sharpe Ratio,
+Sortino Ratio,
+Calmar Ratio,0.0
+Alpha [%],118.22178655444577
+Beta,0.04654341819966184
+Max. Drawdown [%],-6.363997072034644
+Avg. Drawdown [%],-1.1402260476651342
+Max. Drawdown Duration,25314.0
+Avg. Drawdown Duration,463.135593220339
+# Trades,65.0
+Win Rate [%],47.69230769230769
+Best Trade [%],29.618413082979988
+Worst Trade [%],-1.534526854219953
+Avg. Trade [%],1.2637829816513735
+Max. Trade Duration,1104.0
+Avg. Trade Duration,38.13846153846154
+Profit Factor,9.12516569996191
+Expectancy [%],1.3337428756056398
+SQN,3.4335731572298402
+Kelly Criterion,0.40389133393828747
+_strategy,MLStrategy(stop_loss_pct=0.003)
+_equity_curve,"             Equity  DrawdownPct  DrawdownDuration
+0      100000.00000     0.000000               NaN
+1      100000.00000     0.000000               NaN
+2      100000.00000     0.000000               NaN
+3      100000.00000     0.000000               NaN
+4      100162.51000     0.000000               NaN
+...             ...          ...               ...
+27881  226204.26012     0.007548               NaN
+27882  226204.26012     0.007548               NaN
+27883  226204.26012     0.007548               NaN
+27884  226204.26012     0.007548               NaN
+27885  226204.26012     0.007548           25314.0
+
+[27886 rows x 3 columns]"
+_trades,"    Size  EntryBar  ExitBar  EntryPrice  ExitPrice        SL    TP  \
+0   5417         2       16       18.46   18.40462       NaN  None   
+1   5454        17       25       18.28   18.22516       NaN  None   
+2   5491        26       36       18.10   18.04570       NaN  None   
+3   5505        37      345       18.00   17.94600       NaN  None   
+4   5920       346      346       16.69   16.63993       NaN  None   
+..   ...       ...      ...         ...        ...       ...   ...   
+60 -9113      2522     2528       23.98   23.60000  24.05194  None   
+61  9406      2528     2547       23.60   23.90000  23.52920  None   
+62 -9406      2547     2557       23.90   23.97170       NaN  None   
+63  9453      2560     2561       23.71   24.00000  23.63887  None   
+64 -9453      2561     2596       24.00   24.07200       NaN  None   
+
+           PnL  ReturnPct  EntryTime  ExitTime  Duration   Tag  
+0   -299.99346  -0.003000          2        16        14  None  
+1   -299.09736  -0.003000         17        25         8  None  
+2   -298.16130  -0.003000         26        36        10  None  
+3   -297.27000  -0.003000         37       345       308  None  
+4   -296.41440  -0.003000        346       346         0  None  
+..         ...        ...        ...       ...       ...   ...  
+60  3462.94000   0.015847       2522      2528         6  None  
+61  2821.80000   0.012712       2528      2547        19  None  
+62  -674.41020  -0.003000       2547      2557        10  None  
+63  2741.37000   0.012231       2560      2561         1  None  
+64  -680.61600  -0.003000       2561      2596        35  None  
+
+[65 rows x 13 columns]"

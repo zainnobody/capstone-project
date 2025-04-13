@@ -1,0 +1,60 @@
+,0
+Start,0.0
+End,12560.0
+Duration,12560.0
+Exposure Time [%],92.83496536899928
+Equity Final [$],775165.6038200003
+Equity Peak [$],775165.6038200003
+Return [%],675.1656038200002
+Buy & Hold Return [%],9.369202226345081
+Return (Ann.) [%],0.0
+Volatility (Ann.) [%],
+Sharpe Ratio,
+Sortino Ratio,
+Calmar Ratio,0.0
+Alpha [%],670.2065262417282
+Beta,0.5292956068690362
+Max. Drawdown [%],-9.35045717050319
+Avg. Drawdown [%],-1.274625836964858
+Max. Drawdown Duration,2625.0
+Avg. Drawdown Duration,81.49606299212599
+# Trades,1409.0
+Win Rate [%],43.00922640170334
+Best Trade [%],5.587668593448947
+Worst Trade [%],-4.055299539170498
+Avg. Trade [%],0.14545319809702306
+Max. Trade Duration,60.0
+Avg. Trade Duration,7.995031937544358
+Profit Factor,1.660300026728086
+Expectancy [%],0.14954151525961365
+SQN,6.854970784590746
+Kelly Criterion,-0.014074377027422258
+_strategy,MLStrategy(stop_loss_pct=0.003)
+_equity_curve,"             Equity  DrawdownPct  DrawdownDuration
+0      100000.00000          0.0               NaN
+1      100000.00000          0.0               NaN
+2      100000.00000          0.0               NaN
+3      100000.00000          0.0               NaN
+4      100000.00000          0.0               NaN
+...             ...          ...               ...
+12556  775165.60382          0.0               NaN
+12557  775165.60382          0.0               NaN
+12558  775165.60382          0.0               NaN
+12559  775165.60382          0.0               NaN
+12560  775165.60382          0.0               NaN
+
+[12561 rows x 3 columns]"
+_trades,"       Size  EntryBar  ExitBar  EntryPrice  ExitPrice        SL    TP          PnL  ReturnPct  EntryTime  ExitTime  Duration   Tag
+0      9174         7       16       10.90   10.97000  10.86730  None    642.18000   0.006422          7        16         9  None
+1     -9174        16       16       10.97   10.97000       NaN  None     -0.00000  -0.000000         16        16         0  None
+2      9233        20       29       10.90   10.91000  10.86730  None     92.33000   0.000917         20        29         9  None
+3     -9233        29       30       10.91   11.13000       NaN  None  -2031.26000  -0.020165         29        30         1  None
+4      8876        32       33       11.12   11.12000  10.87727  None      0.00000   0.000000         32        33         1  None
+...     ...       ...      ...         ...        ...       ...   ...          ...        ...        ...       ...       ...   ...
+1404  63779     12515    12523       11.99   11.94000       NaN  None  -3188.95000  -0.004170      12515     12523         8  None
+1405  63513     12524    12524       11.99   11.87427       NaN  None  -7350.35949  -0.009652      12524     12524         0  None
+1406  63536     12525    12536       11.87   11.83000       NaN  None  -2541.44000  -0.003370      12525     12536        11  None
+1407  63590     12537    12540       11.82   11.99000  11.78454  None  10810.30000   0.014382      12537     12540         3  None
+1408 -63590     12540    12553       11.99   11.79000  12.02597  None  12718.00000   0.016681      12540     12553        13  None
+
+[1409 rows x 13 columns]"
