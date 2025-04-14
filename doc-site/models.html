@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Models - Cryptocurrency Price Prediction</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-brain"></i> ML Models</h1>
+      <h2>Deep Learning Architectures for Crypto Prediction</h2>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="models.html" class="active"><i class="fas fa-brain"></i> Models</a></li>
+        <li><a href="results.html"><i class="fas fa-chart-bar"></i> Results</a></li>
+        <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="reports.html"><i class="fas fa-file-alt"></i> Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <section class="models-overview">
+        <h2>Model Architecture Comparison</h2>
+        <p>This project explores various deep learning architectures to predict cryptocurrency price movements.</p>
+        <div class="model-comparison-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Strengths</th>
+                <th>Limitations</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CNN</td>
+                <td>Local feature detection</td>
+                <td>May miss long-range trends</td>
+                <td>Short-term patterns</td>
+              </tr>
+              <tr>
+                <td>RNN</td>
+                <td>Sequential memory</td>
+                <td>Vanishing gradients</td>
+                <td>Simple sequences</td>
+              </tr>
+              <tr>
+                <td>GRU</td>
+                <td>Efficient long-term capture</td>
+                <td>Less expressive on complex data</td>
+                <td>Medium-length sequences</td>
+              </tr>
+              <tr>
+                <td>Transformer</td>
+                <td>Handles complex dependencies</td>
+                <td>Data-hungry</td>
+                <td>Large datasets</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+      <section class="models-grid">
+        <h2>Model Details</h2>
+        <div class="model-cards">
+          
+            <div class="model-card">
+              <h3>CNN</h3>
+              <p>Convolutional Neural Networks (CNNs) are typically used for image processing but can be adapted for time series data.</p>
+              <div class="model-links">
+                <a href="models/cnn.html" class="btn">View Details</a>
+              </div>
+            </div>
+            
+            <div class="model-card">
+              <h3>GRU</h3>
+              <p>GRUs use gating mechanisms to capture long-term dependencies in sequence data.</p>
+              <div class="model-links">
+                <a href="models/gru.html" class="btn">View Details</a>
+              </div>
+            </div>
+            
+            <div class="model-card">
+              <h3>RNN</h3>
+              <p>Recurrent Neural Networks (RNNs) maintain memory of sequential inputs and are ideal for time series prediction.</p>
+              <div class="model-links">
+                <a href="models/rnn.html" class="btn">View Details</a>
+              </div>
+            </div>
+            
+            <div class="model-card">
+              <h3>TRANSFORMER</h3>
+              <p>Transformers leverage self-attention to capture complex interdependencies in large datasets.</p>
+              <div class="model-links">
+                <a href="models/transformer.html" class="btn">View Details</a>
+              </div>
+            </div>
+            
+            <div class="model-card">
+              <h3>RANDOM_FOREST</h3>
+              <p>A machine learning model applied to crypto prediction.</p>
+              <div class="model-links">
+                <a href="models/random_forest.html" class="btn">View Details</a>
+              </div>
+            </div>
+            
+        </div>
+      </section>
+      
+      <section class="feature-importance">
+        <h2>Feature Importance Analysis</h2>
+        <div class="image-container">
+          <img src="assets/img/plots/final_o-scope/feature_group_performance.png" alt="Feature Group Performance">
+          <p>Comparison of different feature groups and their impact on model performance</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2025 - Created by <a href="https://github.com/zainnobody" target="_blank">zainnobody</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+        

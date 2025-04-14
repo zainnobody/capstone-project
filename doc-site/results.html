@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results - Cryptocurrency Price Prediction</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-chart-bar"></i> Results Summary</h1>
+      <h2>Top 5 Backtest Performances</h2>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="models.html"><i class="fas fa-brain"></i> Models</a></li>
+        <li><a href="results.html" class="active"><i class="fas fa-chart-bar"></i> Results</a></li>
+        <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="reports.html"><i class="fas fa-file-alt"></i> Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <section class="results-summary">
+        <h2>Top 5 Backtest Results</h2>
+        <ul>
+          <li style='margin-bottom:10px;'><strong>SENTIMENT (BTC, %):</strong> Return: 13444.67% — <a href='../results\sentiment_btc_10pct_3stloss\backtest_plot.html' target='_blank'>View Backtest</a></li><li style='margin-bottom:10px;'><strong>RNN (BTC, %):</strong> Return: 675.17% — <a href='../results\rnn_btc_1pct_0_3stloss\backtest_plot.html' target='_blank'>View Backtest</a></li><li style='margin-bottom:10px;'><strong>CNN (BTC, %):</strong> Return: 260.65% — <a href='../results\cnn_btc_1pct_0_3stloss\backtest_plot.html' target='_blank'>View Backtest</a></li><li style='margin-bottom:10px;'><strong>GRU (BTC, %):</strong> Return: 91.65% — <a href='../results\gru_btc_1pct_0_3stloss\backtest_plot.html' target='_blank'>View Backtest</a></li><li style='margin-bottom:10px;'><strong>TRANSFORMER (ETH, %):</strong> Return: 31.73% — <a href='../results\transformer_eth_1pct_0_3stloss\backtest_plot.html' target='_blank'>View Backtest</a></li>
+        </ul>
+        <p>For full details, refer to the <a href="../results/compiled_backtest_stats.csv" target="_blank">compiled backtest stats CSV</a>.</p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2025 - Created by <a href="https://github.com/zainnobody" target="_blank">zainnobody</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+        

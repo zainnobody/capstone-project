@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Cryptocurrency Price Prediction</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><i class="fas fa-tachometer-alt"></i> Interactive Dashboard</h1>
+      <h2>Explore Model Predictions and Performance</h2>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="models.html"><i class="fas fa-brain"></i> Models</a></li>
+        <li><a href="results.html"><i class="fas fa-chart-bar"></i> Results</a></li>
+        <li><a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+        <li><a href="reports.html"><i class="fas fa-file-alt"></i> Reports</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="container">
+      <section class="control-panel">
+        <h2>Dashboard Controls</h2>
+        <div class="filters">
+          <div class="filter-group">
+            <label for="model-select">Model:</label>
+            <select id="model-select">
+              <option value="cnn">CNN</option><option value="gru">GRU</option><option value="random_forest">RANDOM_FOREST</option><option value="rnn">RNN</option><option value="transformer">TRANSFORMER</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="asset-select">Asset:</label>
+            <select id="asset-select">
+              <option value="btc">BTC</option><option value="eth">ETH</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="data-percent-select">Data %:</label>
+            <select id="data-percent-select">
+              <option value="10">10%</option><option value="1">1%</option><option value="0.1">0.1%</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="date-range">Date Range:</label>
+            <div class="date-picker">
+              <input type="datetime-local" id="start-date" value="2012-01-31T10:45">
+              <span>to</span>
+              <input type="datetime-local" id="end-date" value="2014-02-06T14:02">
+            </div>
+          </div>
+          <button id="apply-filters" class="btn">Apply Filters</button>
+        </div>
+      </section>
+      <section class="dashboard-visualization">
+        <h2>Average Returns by Model</h2>
+        <div class="chart-container">
+          <canvas id="dashboardChart"></canvas>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>© 2025 - Created by <a href="https://github.com/zainnobody" target="_blank">zainnobody</a></p>
+    </div>
+  </footer>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
+        
