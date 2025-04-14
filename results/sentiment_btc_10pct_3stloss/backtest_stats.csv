@@ -1,0 +1,55 @@
+,0
+Start,2012-01-31 10:45:00+00:00
+End,2014-02-06 14:02:00+00:00
+Duration,737 days 03:17:00
+Exposure Time [%],0.011500135126587738
+Equity Final [$],13544670.860000001
+Equity Peak [$],20401392.38
+Return [%],13444.670860000002
+Buy & Hold Return [%],13444.561403508771
+Return (Ann.) [%],439.35601390934227
+Volatility (Ann.) [%],664.5959557400206
+CAGR [%],435.51709456390375
+Sharpe Ratio,0.6610874022248961
+Sortino Ratio,6.6300938731509795
+Calmar Ratio,5.442945265818789
+Alpha [%],0.15130944174416072
+Beta,0.9999968869977043
+Max. Drawdown [%],-80.72027045145188
+Avg. Drawdown [%],-1.5060489082575022
+Max. Drawdown Duration,210 days 01:58:00
+Avg. Drawdown Duration,0 days 16:39:00
+# Trades,1
+Win Rate [%],0.0
+Best Trade [%],-33.333333333333336
+Worst Trade [%],-33.333333333333336
+Avg. Trade [%],-33.333333333333336
+Max. Trade Duration,0 days 13:20:00
+Avg. Trade Duration,0 days 13:20:00
+Profit Factor,0.0
+Expectancy [%],-33.333333333333336
+SQN,
+Kelly Criterion,
+_strategy,SentimentStrategy(stop_loss_pct=0.03)
+_equity_curve,"                                Equity  DrawdownPct DrawdownDuration
+2012-01-31 10:45:00+00:00    100000.00     0.000000              NaT
+2012-01-31 10:46:00+00:00    100000.00     0.000000              NaT
+2012-01-31 10:47:00+00:00    100000.00     0.000000              NaT
+2012-01-31 10:48:00+00:00    100000.00     0.000000              NaT
+2012-01-31 10:49:00+00:00    100000.00     0.000000              NaT
+...                                ...          ...              ...
+2014-02-06 13:57:00+00:00  13596601.10     0.333545              NaT
+2014-02-06 13:59:00+00:00  13570460.54     0.334827              NaT
+2014-02-06 14:00:00+00:00  13561513.10     0.335265              NaT
+2014-02-06 14:01:00+00:00  13570285.10     0.334835              NaT
+2014-02-06 14:02:00+00:00  13544670.86     0.336091 68 days 05:19:00
+
+[347822 rows x 3 columns]"
+_trades,"    Size  EntryBar  ExitBar  EntryPrice  ExitPrice    SL    TP      PnL  \
+0  17543         2       41         5.7        3.8  None  None -33331.7   
+
+   ReturnPct                 EntryTime                  ExitTime  \
+0  -0.333333 2012-01-31 10:47:00+00:00 2012-02-01 00:07:00+00:00   
+
+         Duration   Tag  
+0 0 days 13:20:00  None  "
