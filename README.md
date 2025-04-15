@@ -1,7 +1,6 @@
 # O-Scope Crypto: Price & Sentiment Predictor
 
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)  
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)   [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 **Authors:** [Zain Ali](https://github.com/zainnobody), [Hallie Kinsey](https://github.com/halliekinsey), and [Nick Short](https://github.com/nshort2001)
 
@@ -10,8 +9,6 @@ Explore the full project on the [GitHub repository](https://github.com/zainnobod
 The dataset is available on [Hugging Face](https://huggingface.co/datasets/zainnobody/capstone-project-data),  
 and interactive reports and results can be viewed on the [project documentation site](https://zainnobody.github.io/capstone-project/docs).
 
-
----
 
 ## Overview
 
@@ -25,15 +22,11 @@ Key objectives include:
 
 This project bridges traditional technical analysis with real-time sentiment analytics to help investors decipher the volatile and dynamic cryptocurrency landscape.
 
----
-
 ## Documentation & Presentation
 
 - **Final Project Report:** Detailed documentation and an essay outlining background, data discovery, feature engineering, modeling strategies, results, and conclusions can be found in `oscopecrypto-final.pdf`.
 - **Web Documentation:** A live documentation site is available in the [`docs/`](docs/) folder, including pages on model architectures, reports, and results.
 - **Presentation Materials:** Supplementary slides and dashboards are hosted under the `docs/models/` and `docs/reports.html` pages.
-
----
 
 ## Repository Structure
 
@@ -113,8 +106,6 @@ O-Scope Crypto/
 - **Results Directory (in `results/`)**  
   - Each folder in `results/` corresponds to a specific experiment setup (e.g., model type, asset, data percentage, and stop-loss parameter). They include interactive backtest charts (HTML) and CSV files summarizing trade performance.
 
----
-
 ## Features
 
 - **Integrated Pipeline:**  
@@ -131,8 +122,6 @@ O-Scope Crypto/
 - **Comprehensive Logging and Reporting:**  
   - Extensive logs and experiment files allow for detailed performance tracking and reproducibility.
   - Generated Markdown/HTML reports in the `logs/reports/` folder summarize all experiments.
-
----
 
 ## Installation & Dependencies
 
@@ -162,8 +151,6 @@ O-Scope Crypto/
 4. **Explore the Documentation:**
    - View model details and reports on the local docs pages (open `docs/index.html` in your browser).
 
----
-
 ## Usage
 
 - **Running the Pipeline:**  
@@ -178,8 +165,6 @@ O-Scope Crypto/
 - **Dashboard & Reports:**  
   The `docs/dashboard.html` page and `logs/reports/` directory hold full experiment reports with embedded plots, metrics, and analysis summaries.
 
----
-
 ## Model Performance & Evaluation
 
 Performance and metrics for each model are stored under:
@@ -189,16 +174,12 @@ Performance and metrics for each model are stored under:
 
 The report also explains how file names embed vital information (model type, asset, data sample percentage, and stop-loss parameters) to help you quickly identify and compare experiment results.
 
----
-
 ## Limitations & Future Work
 
 - **Prototype Status:** O-Scope Crypto is a research prototype and requires further validation before production use.
 - **Data & Computational Constraints:** The current implementation uses capped data percentages to manage computational load; scaling up will be a focus for future work.
 - **Integration Enhancements:** Plans include transitioning from historical batch processing to real-time data feeds and expanding sentiment analysis with additional data sources (e.g., social media).
 - **Model Optimization:** Further optimization of deep learning models (e.g., hyperparameter tuning and architecture modifications) is necessary for live deployment.
-
----
 
 ## References
 
@@ -210,8 +191,6 @@ The report also explains how file names embed vital information (model type, ass
 - Zielinski, M. (2024). *Bitcoin Historical Data*. Kaggle. https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data
 - Zhao, D. (2024). *FNSPID: A Fine-Grained Financial News Dataset for Public Investors*. GitHub. https://github.com/Zdong104/FNSPID_Financial_News_Dataset
 - [Additional references detailed in the final report.]
-
----
 
 ## License
 
