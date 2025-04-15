@@ -6,7 +6,9 @@
 **Authors:** [Zain Ali](https://github.com/zainnobody), [Hallie Kinsey](https://github.com/halliekinsey), and [Nick Short](https://github.com/nshort2001)
 
 
-To explore the full project, go through the **[GitHub repository](https://github.com/zainnobody/capstone-project)**, which contains all source code, models, and analysis notebooks. The complete dataset used for training—including minute-level crypto pricing and sentiment-enhanced financial news—is publicly available on **[Hugging Face](https://huggingface.co/datasets/zainnobody/capstone-project-data)**. For a visual overview of model performance, architecture breakdowns, and backtesting results, visit the **[interactive project documentation site](https://zainnobody.github.io/capstone-project/docs)**.
+Explore the full project on the [GitHub repository](https://github.com/zainnobody/capstone-project).  
+The dataset is available on [Hugging Face](https://huggingface.co/datasets/zainnobody/capstone-project-data),  
+and interactive reports and results can be viewed on the [project documentation site](https://zainnobody.github.io/capstone-project/docs).
 
 
 ---
